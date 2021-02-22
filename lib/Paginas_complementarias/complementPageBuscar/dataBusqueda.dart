@@ -31,8 +31,18 @@ class dataDisplayBusque extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      backgroundColor: Colors.lightBlue[50],
       appBar: AppBar(
-        title: Text("gaaaa"),
+        backgroundColor: Colors.blue[900],
+        title: Center(
+          child: Text('Busqueda', textAlign: TextAlign.center),
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(10.0),
+            bottomRight: Radius.circular(10.0),
+          ),
+        ),
       ),
       body: Container(
         child: FutureBuilder(
