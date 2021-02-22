@@ -61,29 +61,45 @@ class cajaResultados extends StatelessWidget {
             height: 15.0,
           ),
           btnResultados(
-            text: 'PRACTICANTE PROGRAMADOR DE SISTEMAS Y DISEÑO DE PAGINAS WEB',
+            text:
+                'PRACTICANTE PROGRAMADOR asdas dasdsadb ahsjb dhjsabhdjashdjahsdj',
             text1:
-                'FABRICA DE CALZADO INDUSTRIAL REQUIERE CONTRATAR A JOVEN HOMBRE O MUJER DE EDAD 22 A 30 AÑOS QUE TENGA ESTUDIO DE PROGRAMACION DE SISTEMAS, SOFTWARE, SOPORTE TÉCNICO Y DISEÑO GRAFICO, PAGINAS WEB.QUE TENGA INICIATIVA PROPIA, CREATIVO, INNOVADOR, DINAMICO, Y QUE SE ADAPTE A TRABAJO BAJO PRESION.QUE VIVA CERCA A LA ZONA SAN JUAN DE LURIGANCHO (CHIMU, CAMPOY, ZARATE, PTE NUEVO, ET',
+                'FABRICA DE CALZADO INDUSTRIAL REQUIERE CONTRATAR A JOVEN HOMBRE O MUJER DE EDAD 22 A 30 AÑOS',
+          ),
+          SizedBox(
+            height: 5.0,
           ),
           btnResultados(
-            text: 'Se Requiere Analistas de Crédito con experiencia',
+            text: 'Se Requiere Analistas asdsadsad',
             text1:
-                'Descripción ANALISTA DE CRÉDITO: REQUISITOS: - Indispensable contar con experiencia mínima de 1 año en entidades financieras - Contar con cartera de clientes en la zona a postular. - Dominio de la evaluación cualitativa y cuantitativa para microcrédito y créditos comerciales en el sector PYMES. FUNCIONES: - Gestionar en forma eficiente la cartera de créditos. - Lograr indicadores óptimos de rentabilidad, calidad y crecimiento. - Efectuar actividades de promoción de los productos y servicios financieros. - Identificar oportunidades de negocio que faciliten el crecimiento y la diversificación del riesgo de la cartera de crédito.',
+                'Descripción ANALISTA DE CRÉDITO: REQUISITOS: - Indispensable contar con experiencia mínima de 1 año en entidades ',
+          ),
+          SizedBox(
+            height: 5.0,
           ),
           btnResultados(
-            text: 'Ejecutivo de Ventas',
+            text: 'Ejecutivo de Ventas ',
             text1:
                 'Descripción Empresa ODISEC SAC especialista en brindar servicios comerciales de productos financieros y socio estratégico del grupo SCOTIABANK; se encuentra en proceso de reclutamiento de EJECUTIVOS DE VENTA para FINANCIERA CREDISCOTIA Zona de JULIACA.',
+          ),
+          SizedBox(
+            height: 5.0,
           ),
           btnResultados(
             text: 'gestor de ventas',
             text1:
-                'Descripción Empresa importante distribuidora de productos de consumo masivo, te invita a participar en el proceso de selección para cubrir nuestras vacantes como: GESTOR DE VENTAS Territorios para laborar: - Puno - Juliaca - Provincias Estudios: - Deseable estudio superiores y/o técnicos concluidos en carreras de Administración y marketing, Ing. Industrial y/o afines. - Microsoft Office – Básico',
+                'Descripción Empresa importante distribuidora de productos de consumo masivo, te invita a participar en el proceso ',
+          ),
+          SizedBox(
+            height: 5.0,
           ),
           btnResultados(
             text: 'Asesores de Servicio',
             text1:
                 'Descripción ¡Creemos que tu talento merece la mejor Oportunidad! Por encargo de nuestro cliente importante empresa de telefonía, nos encontramos en la búsqueda de: Asesores de Servicio Requisitos - Estudios técnicos culminados o universitarios culminados, truncos o en curso de Administración, Comunicaciones, Ingeniería Industrial y/o afines',
+          ),
+          SizedBox(
+            height: 5.0,
           ),
           btnResultados(
             text: 'Ejecutivo Comercial',
@@ -108,37 +124,72 @@ class btnResultados extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+      /*shape: StadiumBorder(
+        side: BorderSide(
+          color: Colors.black,
+          width: 2.0,
+        ),
+      ),*/
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(1.0),
+        borderRadius: BorderRadius.circular(10.0),
+        /*side: BorderSide(
+          color: Colors.white,
+          width: 10.0,
+        ),*/
       ),
       child: InkWell(
-        splashColor: Colors.orange,
+        splashColor: Colors.lightBlue[200],
         onTap: () {
           Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => pageViewResulBusqueda(text, text1)));
         },
         child: Container(
-          height: 150,
+          height: 200,
           decoration: BoxDecoration(
+              border: Border.all(
+                width: 10.0,
+                color: Colors.white,
+              ),
+              borderRadius: BorderRadius.all(Radius.circular(10.0))),
+          /*decoration: BoxDecoration(
             border: Border(
               bottom: BorderSide(
-                color: Colors.grey[400],
+                color: Colors.red[400],
                 width: 1,
               ),
             ),
-          ),
+          ),*/
           child: Column(
             children: <Widget>[
-              SizedBox(
-                width: 380.0,
-                child: Text(
-                  this.text,
-                  maxLines: 2,
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18.0,
+              Row(
+                children: [
+                  SizedBox(
+                    width: 290.0,
+                    child: Text(
+                      this.text,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18.0,
+                      ),
+                    ),
                   ),
-                ),
+                  Spacer(flex: 5),
+                  ButtonBar(
+                    buttonHeight: 10.0,
+                    children: <Widget>[
+                      IconButton(
+                          icon: Icon(
+                            Icons.star,
+                            color: Colors.yellow,
+                          ),
+                          onPressed: () {
+                            print('agregado a favoritos');
+                          }),
+                    ],
+                  )
+                ],
               ),
               SizedBox(
                 height: 10.0,
@@ -149,7 +200,7 @@ class btnResultados extends StatelessWidget {
                 child: Text(
                   this.text1,
                   style: TextStyle(),
-                  maxLines: 5,
+                  maxLines: 6,
                 ),
               ),
             ],

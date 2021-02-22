@@ -1,3 +1,4 @@
+import 'package:app_movil/Paginas_complementarias/complementPageBuscar/dataBusqueda.dart';
 import 'package:flutter/material.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/data.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/pageResultadoBusqueda.dart';
@@ -23,7 +24,9 @@ class _pageBuscarState extends State<pageBuscar> {
           IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
-                showSearch(context: context, delegate: DataSearch());
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => dataDisplayBusque()));
+                /*showSearch(context: context, delegate: DataSearch());*/
               })
         ],
         shape: RoundedRectangleBorder(

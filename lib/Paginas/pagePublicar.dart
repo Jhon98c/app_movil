@@ -75,7 +75,7 @@ class _pagePublicarState extends State<pagePublicar> {
                 SizedBox(height: 10.0),
                 Flexible(
                   child: Container(
-                    width: 370,
+                    width: 450,
                     child: Column(
                       children: <Widget>[
                         SizedBox(height: 15.0),

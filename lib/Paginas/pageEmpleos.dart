@@ -99,25 +99,29 @@ class todosEmpleos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      /*decoration: BoxDecoration(
-        border: Border.all(
-          color: Colors.black,
-          width: 2,
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        width: 450.0,
+        /*decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.black,
+            width: 2,
+          ),
+        ),*/
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 15.0),
+            Text(
+              'Todos los Empleos recomendados',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            cajaResultados(),
+          ],
         ),
-      ),*/
-      child: Column(
-        children: <Widget>[
-          SizedBox(height: 15.0),
-          Text(
-            'Todos los Empleos recomendados',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-          ),
-          SizedBox(
-            height: 15.0,
-          ),
-          cajaResultados(),
-        ],
       ),
     );
   }
@@ -130,19 +134,23 @@ class abiertosEmpleos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          SizedBox(height: 15.0),
-          Text(
-            'Empleos/proyectos guardados',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-          ),
-          SizedBox(
-            height: 15.0,
-          ),
-          cajaResultados(),
-        ],
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        width: 450.0,
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 15.0),
+            Text(
+              'Empleos/proyectos guardados',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            cajaResultados(),
+          ],
+        ),
       ),
     );
   }
@@ -155,19 +163,23 @@ class procesoEmpleos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          SizedBox(height: 15.0),
-          Text(
-            'Empleos/proyectos Favoritos',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-          ),
-          SizedBox(
-            height: 15.0,
-          ),
-          cajaResultados(),
-        ],
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        width: 450.0,
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 15.0),
+            Text(
+              'Empleos/proyectos Favoritos',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            cajaResultados(),
+          ],
+        ),
       ),
     );
   }
@@ -180,19 +192,23 @@ class anterioresEmpleos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          SizedBox(height: 15.0),
-          Text(
-            'Proyectos/empleos en proceso',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-          ),
-          SizedBox(
-            height: 15.0,
-          ),
-          cajaResultados(),
-        ],
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        width: 450.0,
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 15.0),
+            Text(
+              'Proyectos/empleos en proceso',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            cajaResultados(),
+          ],
+        ),
       ),
     );
   }
@@ -205,19 +221,23 @@ class guardadosEmpleos extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          SizedBox(height: 15.0),
-          Text(
-            'Todos los Empleos recomendados',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
-          ),
-          SizedBox(
-            height: 15.0,
-          ),
-          cajaResultados(),
-        ],
+    return Align(
+      alignment: Alignment.topCenter,
+      child: Container(
+        width: 450.0,
+        child: Column(
+          children: <Widget>[
+            SizedBox(height: 15.0),
+            Text(
+              'Todos los Empleos recomendados',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+            ),
+            SizedBox(
+              height: 15.0,
+            ),
+            cajaResultados(),
+          ],
+        ),
       ),
     );
   }

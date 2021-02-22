@@ -1,0 +1,33 @@
+[
+    {
+        "nombreProyecto": "programdor c++",
+        "descriProyecto": "se busca programdor web",
+        "remuneracion": "s/. 500"
+
+    },
+    {
+        "nombreProyecto": "JAVA",
+        "descriProyecto": "se busca programdor 1",
+        "remuneracion": "s/. 600"
+
+    },
+    {
+        "nombreProyecto": "ANDROID",
+        "descriProyecto": "se busca programdor 2",
+        "remuneracion": "s/. 600"
+
+    },
+    {
+        "nombreProyecto": "IOS",
+        "descriProyecto": "se busca programdor 3",
+        "remuneracion": "s/. 320"
+
+    },
+    {
+        "nombreProyecto": "MICROSOFT",
+        "descriProyecto": "se busca programdor 4",
+        "remuneracion": "s/. 300"
+
+    }
+
+]

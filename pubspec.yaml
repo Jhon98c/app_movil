@@ -36,6 +36,7 @@ flutter:
   assets:
     - assets/images/
     - assets/iconsvg/
+    - assets/data.json
 
 fonts:
     - family: ToolsIcons

@@ -21,7 +21,11 @@ class pageMensaje extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          //width: 500.0,
+          decoration: BoxDecoration(
+              border: Border.all(width: 3, color: Colors.lightBlue[50]),
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10.0)),
+          //width: 550.0,
           child: ListView.builder(
             itemCount: chats.length,
             itemBuilder: (BuildContext context, int index) {
