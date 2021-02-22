@@ -1,0 +1,43 @@
+name: app_movil
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+
+  cupertino_icons: ^1.0.0
+  flutter_svg: ^0.18.1
+  flutter_tags: ^0.4.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  simple_animations: ^1.1.3
+  page_transition: ^1.1.4
+  bottom_navy_bar: ^5.6.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - assets/iconsvg/
+
+fonts:
+    - family: ToolsIcons
+      fonts:
+        - asset: ssets/icons/ToolsIcons.ttf
