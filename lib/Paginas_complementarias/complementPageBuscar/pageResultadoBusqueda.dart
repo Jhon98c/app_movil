@@ -1,3 +1,4 @@
+import 'package:app_movil/Paginas_complementarias/complementPageBuscar/dataBusqueda.dart';
 import 'package:flutter/material.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/pageViewResulBusqueda.dart';
 
@@ -38,9 +39,12 @@ class _pageResultadoBusState extends State<pageResultadoBus> {
         child: Container(
           width: 450.0,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[cajaResultados()],
-          ),
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                cajaResultados(),
+              ]
+              //cajaResultados()],
+              ),
         ),
       ),
     );
@@ -58,8 +62,10 @@ class cajaResultados extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           SizedBox(
-            height: 15.0,
+            height: 10.0,
           ),
+          dataDisplayBusque(),
+          /*
           btnResultados(
             text:
                 'PRACTICANTE PROGRAMADOR asdas dasdsadb ahsjb dhjsabhdjashdjahsdj',
@@ -105,7 +111,7 @@ class cajaResultados extends StatelessWidget {
             text: 'Ejecutivo Comercial',
             text1:
                 'Descripción Nuestro cliente importante empresa industrial, líder en la fabricación y comercialización de puertas, se encuentra en búsqueda del mejor talento para el cargo de EJECUTIVO COMERCIAL – VIVIENDA RURAL REQUISITOS: - Estudios Técnicos y/o Universitarios completos. - Tener vehículo propio para desplazamiento (empresa cubre los gastos de combustible) - Mínimo 1 año de experiencia realizando venta de productos técnicos.',
-          ),
+          ),*/
         ],
       ),
     );

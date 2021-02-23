@@ -71,12 +71,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
               if (status == AnimationStatus.completed) {
                 _positionController.forward();
               }
-
-
-
-
-
-              
             },
           );
 
