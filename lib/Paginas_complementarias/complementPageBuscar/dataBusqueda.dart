@@ -54,15 +54,60 @@ class dataDisplayBusque extends StatelessWidget {
                   shrinkWrap: true,
                   itemBuilder: (BuildContext context, int index) {
                     Items item = snapshot.data[index];
-                    return Text(
-                      item.nombreProyecto,
-                      style: TextStyle(fontSize: 20.0),
-                    );
+                    return datesJobs(item: item);
                   },
                 );
               }
               return CircularProgressIndicator();
             }),
+      ),
+    );
+  }
+}
+
+class datesJobs extends StatelessWidget {
+  const datesJobs({
+    Key key,
+    @required this.item,
+  }) : super(key: key);
+
+  final Items item;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        width: 450.0,
+        child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          child: InkWell(
+            splashColor: Colors.lightBlue[200],
+            onTap: () {
+              /*
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => pageViewResulBusqueda(text, text1)));*/
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item.nombreProyecto,
+                    style: TextStyle(fontSize: 20.0),
+                  ),
+                  Text(item.descriProyecto),
+                  Text(item.ubicacion),
+                  Text(item.habilidades),
+                  Text(item.remuneracion),
+                  Text(item.fecha),
+                ],
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

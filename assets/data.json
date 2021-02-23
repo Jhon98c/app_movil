@@ -1,33 +1,83 @@
 [
     {
-        "nombreProyecto": "programdor c++",
-        "descriProyecto": "se busca programdor web",
-        "remuneracion": "s/. 500"
-
+        "nombreProyecto": "Programdor c++",
+        "descriProyecto": "Se busca programador con conociemientos en software de escritorio para un proyecto de aplicativos tanto moviles y escritorio.",
+        "Ubicacion": "Puno",
+        "Habilidades": "C++, SQL",
+        "remuneracion": "S/. 700",
+        "Fecha": "05/31/2021"
     },
     {
-        "nombreProyecto": "JAVA",
-        "descriProyecto": "se busca programdor 1",
-        "remuneracion": "s/. 600"
-
+        "nombreProyecto": "Se necesita practicante",
+        "descriProyecto": "Se requiere practicante en la carrera profesional de ingenieria sistemas o estadistica para Los Andes del Sur.",
+        "Ubicacion": "Puno",
+        "Habilidades": "SQL Server, C++, PHP",
+        "remuneracion": "S/. 700",
+        "Fecha": "07/31/2021"
     },
     {
-        "nombreProyecto": "ANDROID",
-        "descriProyecto": "se busca programdor 2",
-        "remuneracion": "s/. 600"
-
+        "nombreProyecto": "Desarrollador Movil",
+        "descriProyecto": "Se busca profesional con conocimientos en desarrollar aplicativos moviles para integrarlos a proyectos.",
+        "Ubicacion": "Puno",
+        "Habilidades": "Android, Flutter, React",
+        "remuneracion": "S/. 2000",
+        "Fecha": "09/31/2021"
     },
     {
-        "nombreProyecto": "IOS",
-        "descriProyecto": "se busca programdor 3",
-        "remuneracion": "s/. 320"
-
+        "nombreProyecto": "Contador",
+        "descriProyecto": "Se requiere profesional de la carrera de contabilidad para elaborar en la empresa de contardores SAC.",
+        "Ubicacion": "Juliaca",
+        "Habilidades": "Contabilidad",
+        "remuneracion": "S/. 3000",
+        "Fecha": "11/31/2021"
     },
     {
-        "nombreProyecto": "MICROSOFT",
-        "descriProyecto": "se busca programdor 4",
-        "remuneracion": "s/. 300"
-
+        "nombreProyecto": "Cocinero/a",
+        "descriProyecto": "sSODEXO busca ser parte de la familia del mejor experto/experta en el cargo de Cocinero(a)!.  Si, tu ADN está compuesto por: - 100% espíritu de servicio, - 100% espíritu de progreso, - 100% espíritu de equipo",
+        "Ubicacion": "Puno",
+        "Habilidades": "Chef",
+        "remuneracion": "S/. 800",
+        "Fecha": "20/31/2021"
+    },
+    {
+        "nombreProyecto": "Operario de campo mantenimiento con brevete B2C Puno",
+        "descriProyecto": "PIC DEL PERÚ SAC, se encuentra en la búsqueda de personas que deseen desempeñarse como Contratistas en la compañía, realizando TRABAJOS DE MANTENIMIENTO en sistemas fotovoltaico en la zona rural de Perú (Modalidad: Recibo por Honorarios), que cumplan con el siguiente perfil: Perfil: Estudios técnicos concluidos, en curso y/o inconclusos de las carreras de electricidad. Deseable contar con experiencia en tareas de mantenimiento. Contar con licencia de conducir para moto. (indispensable). Disponibilidad para trasladarse a diferentes zonas rurales según ciudad.",
+        "Ubicacion": "Juliaca",
+        "Habilidades": "Licencias de conducir: A-II-B",
+        "remuneracion": "S/. 900",
+        "Fecha": "06/31/2021"
+    },
+    {
+        "nombreProyecto": "Tecnica de Enfermeria",
+        "descriProyecto": "Clínica de Dermatología, Laser y Estética necesita incorporar a su Staff en Juliaca dos Técnicas en Enfermería para prestar atención a pacientes en el área de consulta externa y procedimientos. Buen ambiente de trabajo, remuneración por encima del promedio del Mercado.",
+        "Ubicacion": "Puno",
+        "Habilidades": "Enfermera",
+        "remuneracion": "S/. 1500",
+        "Fecha": "01/02/2021"
+    },
+    {
+        "nombreProyecto": "Administrador/a",
+        "descriProyecto": "Se requiere contratar a Profesional para desempeñar el puesto de Administrador en Clínica de Dermatología, Laser y Estética en nuestra sede de Juliaca. Conocimientos de manejo de personal , contabilidad, finanzas, marketing. Trabajo bajo presión. Buen ambiente de trabajo, posibilidad de carrera dentro de la empresa.",
+        "Ubicacion": "Puno",
+        "Habilidades": "Administracion",
+        "remuneracion": "S/. 7500",
+        "Fecha": "20/02/2021"
+    },
+    {
+        "nombreProyecto": "Promotor de créditos",
+        "descriProyecto": "La Caja Rural de Ahorro y Crédito Los Andes S.A., empresa líder dentro del sistema de microfinanzas rurales, como parte del crecimiento institucional, está en la búsqueda de talentos para cubrir el puesto de: PROMOTOR DE CRÉDITOS",
+        "Ubicacion": "Juliaca",
+        "Habilidades": "Contador, Administracion",
+        "remuneracion": "S/. 200",
+        "Fecha": "22/01/2021"
+    },
+    {
+        "nombreProyecto": "Programador para sitios web",
+        "descriProyecto": "El lechon, bsuca profesional en las carrera de sistemas o estadistica para trabajor en un sitio web para el restaurant El lechon.",
+        "Ubicacion": "Puno",
+        "Habilidades": "PHP, SQL SERVER, PYTHON",
+        "remuneracion": "S/. 2000",
+        "Fecha": "19/02/2021"
     }
 
 ]
