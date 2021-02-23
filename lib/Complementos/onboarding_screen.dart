@@ -133,11 +133,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               '¡Vive tu vida mas inteligente\ncon nosotros!',
                               style: kTitleStyle,
                             ),
-                            SizedBox(height: 15.0),
-                            Text(
-                              'Encuentra el empleo que deseas sin la necesidad de moverte de tu hogar.',
-                              style: kSubtitleStyle,
-                            ),
                           ],
                         ),
                       ),
@@ -159,11 +154,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                             Text(
                               'Obten una nueva experiencia\n',
                               style: kTitleStyle,
-                            ),
-                            SizedBox(height: 15.0),
-                            Text(
-                              '',
-                              style: kSubtitleStyle,
                             ),
                           ],
                         ),

@@ -59,61 +59,15 @@ class cajaResultados extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Flexible(
-      child: ListView(
+      child: dataDisplayBusque(),
+      /*child: ListView(
         children: <Widget>[
           SizedBox(
             height: 10.0,
           ),
           dataDisplayBusque(),
-          /*
-          btnResultados(
-            text:
-                'PRACTICANTE PROGRAMADOR asdas dasdsadb ahsjb dhjsabhdjashdjahsdj',
-            text1:
-                'FABRICA DE CALZADO INDUSTRIAL REQUIERE CONTRATAR A JOVEN HOMBRE O MUJER DE EDAD 22 A 30 AÑOS',
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          btnResultados(
-            text: 'Se Requiere Analistas asdsadsad',
-            text1:
-                'Descripción ANALISTA DE CRÉDITO: REQUISITOS: - Indispensable contar con experiencia mínima de 1 año en entidades ',
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          btnResultados(
-            text: 'Ejecutivo de Ventas ',
-            text1:
-                'Descripción Empresa ODISEC SAC especialista en brindar servicios comerciales de productos financieros y socio estratégico del grupo SCOTIABANK; se encuentra en proceso de reclutamiento de EJECUTIVOS DE VENTA para FINANCIERA CREDISCOTIA Zona de JULIACA.',
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          btnResultados(
-            text: 'gestor de ventas',
-            text1:
-                'Descripción Empresa importante distribuidora de productos de consumo masivo, te invita a participar en el proceso ',
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          btnResultados(
-            text: 'Asesores de Servicio',
-            text1:
-                'Descripción ¡Creemos que tu talento merece la mejor Oportunidad! Por encargo de nuestro cliente importante empresa de telefonía, nos encontramos en la búsqueda de: Asesores de Servicio Requisitos - Estudios técnicos culminados o universitarios culminados, truncos o en curso de Administración, Comunicaciones, Ingeniería Industrial y/o afines',
-          ),
-          SizedBox(
-            height: 5.0,
-          ),
-          btnResultados(
-            text: 'Ejecutivo Comercial',
-            text1:
-                'Descripción Nuestro cliente importante empresa industrial, líder en la fabricación y comercialización de puertas, se encuentra en búsqueda del mejor talento para el cargo de EJECUTIVO COMERCIAL – VIVIENDA RURAL REQUISITOS: - Estudios Técnicos y/o Universitarios completos. - Tener vehículo propio para desplazamiento (empresa cubre los gastos de combustible) - Mínimo 1 año de experiencia realizando venta de productos técnicos.',
-          ),*/
         ],
-      ),
+      ),*/
     );
   }
 }
