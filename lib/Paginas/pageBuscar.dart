@@ -1,4 +1,5 @@
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/dataBusqueda.dart';
+import 'package:app_movil/Paginas_complementarias/complementPageBuscar/buscarDate.dart';
 import 'package:flutter/material.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/data.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/pageResultadoBusqueda.dart';
@@ -24,8 +25,8 @@ class _pageBuscarState extends State<pageBuscar> {
           IconButton(
               icon: Icon(Icons.search),
               onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => dataDisplayBusque()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => buscarDate()));
                 /*showSearch(context: context, delegate: DataSearch());*/
               })
         ],

@@ -1,27 +1,8 @@
-import 'dart:convert';
-import 'package:app_movil/Paginas_complementarias/complementPageBuscar/buscarDate.dart';
-import 'package:flutter/material.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/items.dart';
+import 'package:app_movil/Paginas_complementarias/complementPageBuscar/pageResultadoBusqueda.dart';
+import 'package:flutter/material.dart';
 
-/*
-class dataDisplayBusque extends StatefulWidget {
-  @override
-  _JsonPageState createState() => _JsonPageState();
-}
-
-class _JsonPageState extends State<dataDisplayBusque> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("gaaaa"),
-      ),
-      
-    );
-  }
-}
-*/
-class buscarDate extends StatelessWidget {
+class dataDisplayBusque extends StatelessWidget {
   Future<List<Items>> fetchItems(BuildContext context) async {
     final jsonString =
         await DefaultAssetBundle.of(context).loadString('assets/data.json');
@@ -31,17 +12,12 @@ class buscarDate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(
-      backgroundColor: Colors.lightBlue[50],
+    return Container(
+      /*backgroundColor: Colors.lightBlue[50],
       appBar: AppBar(
         backgroundColor: Colors.blue[900],
         title: Center(
-          child: SizedBox(
-            child: Text(
-              'Buscar Empleo',
-              textAlign: TextAlign.left,
-            ),
-          ),
+          child: Text('Busqueda', textAlign: TextAlign.center),
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
@@ -49,30 +25,30 @@ class buscarDate extends StatelessWidget {
             bottomRight: Radius.circular(10.0),
           ),
         ),
-      ),
-      body: Container(
-        child: FutureBuilder(
-            future: fetchItems(context),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                return ListView.builder(
-                  itemCount: snapshot.data.length,
-                  shrinkWrap: true,
-                  itemBuilder: (BuildContext context, int index) {
-                    Items item = snapshot.data[index];
-                    return datesBusqueJobs(item: item);
-                  },
-                );
-              }
-              return CircularProgressIndicator();
-            }),
-      ),
+      ),*/
+      //body: Container(
+      child: FutureBuilder(
+          future: fetchItems(context),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return ListView.builder(
+                itemCount: snapshot.data.length,
+                shrinkWrap: true,
+                itemBuilder: (BuildContext context, int index) {
+                  Items item = snapshot.data[index];
+                  return datesJobs(item: item);
+                },
+              );
+            }
+            return CircularProgressIndicator();
+          }),
     );
+    //);
   }
 }
 
-class datesBusqueJobs extends StatelessWidget {
-  const datesBusqueJobs({
+class datesJobs extends StatelessWidget {
+  const datesJobs({
     Key key,
     @required this.item,
   }) : super(key: key);
@@ -154,3 +130,43 @@ class datesBusqueJobs extends StatelessWidget {
     );
   }
 }
+
+/*
+class buscarDate extends StatefulWidget {
+  @override
+  _pageViewResulBusquedaState createState() => _pageViewResulBusquedaState();
+}
+
+class _pageViewResulBusquedaState extends State<buscarDate> {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue[900],
+        title: Center(
+          child: SizedBox(
+            child: Text(
+              'Buscar Empleo',
+              textAlign: TextAlign.left,
+            ),
+          ),
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(10.0),
+            bottomRight: Radius.circular(10.0),
+          ),
+        ),
+      ),
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            cajaResultados(),
+          ],
+        ),
+      ),
+    );
+  }
+}
+*/
