@@ -117,7 +117,7 @@ class cajaResultados extends StatelessWidget {
     );
   }
 }
-
+/*
 class btnResultados extends StatelessWidget {
   final String text;
   final String text1;
@@ -216,3 +216,4 @@ class btnResultados extends StatelessWidget {
     );
   }
 }
+*/
