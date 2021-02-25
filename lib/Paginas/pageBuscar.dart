@@ -1,8 +1,5 @@
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/buscarInfo.dart';
-import 'package:app_movil/Paginas_complementarias/complementPageBuscar/dataBusqueda.dart';
-import 'package:app_movil/Paginas_complementarias/complementPageBuscar/buscarDate.dart';
 import 'package:flutter/material.dart';
-import 'package:app_movil/Paginas_complementarias/complementPageBuscar/data.dart';
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/pageResultadoBusqueda.dart';
 import 'package:flutter_svg/svg.dart';
 

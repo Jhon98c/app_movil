@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:app_movil/Complementos/bottomNavBar.dart';
 import 'package:app_movil/Paginas/pagePerfil.dart';
-import 'package:page_transition/page_transition.dart';
 import 'Complementos/onboarding_screen.dart';
 import 'Paginas_complementarias/complementPagePublicar/pageViewForm.dart';
 

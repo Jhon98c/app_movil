@@ -1,5 +1,6 @@
+//LEER DATOS DE MANERA LOCAL JSON
+
 import 'package:app_movil/Paginas_complementarias/complementPageBuscar/items.dart';
-import 'package:app_movil/Paginas_complementarias/complementPageBuscar/pageResultadoBusqueda.dart';
 import 'package:flutter/material.dart';
 
 class dataDisplayBusque extends StatelessWidget {

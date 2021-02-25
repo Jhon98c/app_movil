@@ -1,7 +1,7 @@
 // To parse this JSON data, do
 //
 //     final items = itemsFromJson(jsonString);
-
+// DATOS DE MANERA LOCAL
 import 'dart:convert';
 
 List<Items> itemsFromJson(String str) =>

@@ -1,3 +1,5 @@
+//DATOS PARA LEER JSON WEB
+
 class Posts {
   final String nombreProyecto;
   final String descriProyecto;
