@@ -79,7 +79,7 @@ class datesJobs extends StatelessWidget {
                   Row(
                     children: <Widget>[
                       SizedBox(
-                        width: 290.0,
+                        width: 260.0,
                         child: Text(
                           item.nombreProyecto,
                           overflow: TextOverflow.ellipsis,
@@ -99,6 +99,7 @@ class datesJobs extends StatelessWidget {
                               icon: Icon(
                                 Icons.star,
                                 color: Colors.yellow,
+                                size: 30.0,
                               ),
                               onPressed: () {
                                 print('agregado a favoritos');

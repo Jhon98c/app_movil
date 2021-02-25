@@ -77,11 +77,11 @@ class _pageFormState extends State<pageFormulario> {
                         fillColor: Colors.white,
                         focusedBorder: OutlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                       ),
                       onSaved: (value) {
@@ -89,7 +89,7 @@ class _pageFormState extends State<pageFormulario> {
                       },
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'Please enter some text';
+                          return 'Ingrese texto';
                         }
                         return null;
                       },
@@ -115,11 +115,11 @@ class _pageFormState extends State<pageFormulario> {
                         fillColor: Colors.white,
                         focusedBorder: OutlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                       ),
                       maxLines: 5,
@@ -135,7 +135,6 @@ class _pageFormState extends State<pageFormulario> {
                     ),
                     Container(
                       alignment: Alignment.topLeft,
-                      width: 170,
                       child: DropdownButtonFormField(
                         decoration: InputDecoration(
                           labelText: 'Ubicacion',
@@ -143,17 +142,23 @@ class _pageFormState extends State<pageFormulario> {
                           fillColor: Colors.white,
                           focusedBorder: OutlineInputBorder(
                             borderSide: new BorderSide(color: Colors.white),
-                            borderRadius: new BorderRadius.circular(25.7),
+                            borderRadius: new BorderRadius.circular(10.0),
                           ),
                           enabledBorder: UnderlineInputBorder(
                             borderSide: new BorderSide(color: Colors.white),
-                            borderRadius: new BorderRadius.circular(25.7),
+                            borderRadius: new BorderRadius.circular(10.0),
                           ),
                         ),
                         onChanged: dropChange,
                         isExpanded: true,
-                        items: <String>['Puno', 'Juliaca', 'cusco']
-                            .map<DropdownMenuItem<String>>(
+                        items: <String>[
+                          'Puno',
+                          'Juliaca',
+                          'Cusco',
+                          'Tacna',
+                          'Moquegua',
+                          'Arequipa'
+                        ].map<DropdownMenuItem<String>>(
                           (String value) {
                             return DropdownMenuItem<String>(
                               child: Text(value),
@@ -175,11 +180,11 @@ class _pageFormState extends State<pageFormulario> {
                         fillColor: Colors.white,
                         focusedBorder: OutlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                       ),
                       maxLines: 2,
@@ -205,11 +210,11 @@ class _pageFormState extends State<pageFormulario> {
                         fillColor: Colors.white,
                         focusedBorder: OutlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                       ),
                       maxLines: 1,
@@ -236,11 +241,11 @@ class _pageFormState extends State<pageFormulario> {
                         fillColor: Colors.white,
                         focusedBorder: OutlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                         enabledBorder: UnderlineInputBorder(
                           borderSide: new BorderSide(color: Colors.white),
-                          borderRadius: new BorderRadius.circular(25.7),
+                          borderRadius: new BorderRadius.circular(10.0),
                         ),
                       ),
                       maxLines: 1,

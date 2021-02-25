@@ -56,7 +56,7 @@ class pageMensaje extends StatelessWidget {
                   child: Row(
                     children: <Widget>[
                       Container(
-                        //padding: EdgeInsets.all(2),
+                        padding: EdgeInsets.all(2),
                         decoration: chat.unread
                             ? BoxDecoration(
                                 borderRadius:
@@ -98,7 +98,7 @@ class pageMensaje extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Row(
                                   children: <Widget>[
@@ -108,25 +108,27 @@ class pageMensaje extends StatelessWidget {
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold,
                                       ),
-                                    ), /*
+                                    ),
                                     chat.sender.isOnline
                                         ? Container(
-                                            margin: const EdgeInsets.only(left: 5),
+                                            margin:
+                                                const EdgeInsets.only(left: 5),
                                             width: 7,
                                             height: 7,
                                             decoration: BoxDecoration(
                                               shape: BoxShape.circle,
-                                              color: Theme.of(context).primaryColor,
+                                              color: Theme.of(context)
+                                                  .primaryColor,
                                             ),
                                           )
                                         : Container(
                                             child: null,
-                                          ),*/
+                                          ),
                                   ],
                                 ),
-                                SizedBox(
-                                  width: 50.0,
-                                ),
+                                /*SizedBox(
+                                  width: 100.0,
+                                ),*/
                                 Text(
                                   chat.time,
                                   style: TextStyle(
@@ -148,7 +150,7 @@ class pageMensaje extends StatelessWidget {
                                   fontSize: 13,
                                   color: Colors.black54,
                                 ),
-                                overflow: TextOverflow.clip,
+                                overflow: TextOverflow.ellipsis,
                                 maxLines: 2,
                               ),
                             ),
